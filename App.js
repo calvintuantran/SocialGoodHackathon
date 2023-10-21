@@ -1,8 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import HomeScreen from './src/components/HomePage';
-// import Login from
+import ChooseWhatToLearnScreen from './src/components/ChooseWhatToLearn';
 
 export default function App() {
   return (
@@ -10,7 +9,7 @@ export default function App() {
       <Text>Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
       <NavigationContainer>
-      <HomeScreen />
+        <ChooseWhatToLearnScreen/>
       </NavigationContainer>
     </View>
   );
