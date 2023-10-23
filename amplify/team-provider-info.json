@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-eliteracyhub-dev-173246-authRole",
+      "UnauthRoleArn": "arn:aws:iam::146320175376:role/amplify-eliteracyhub-dev-173246-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::146320175376:role/amplify-eliteracyhub-dev-173246-authRole",
+      "Region": "us-west-1",
+      "DeploymentBucketName": "amplify-eliteracyhub-dev-173246-deployment",
+      "UnauthRoleName": "amplify-eliteracyhub-dev-173246-unauthRole",
+      "StackName": "amplify-eliteracyhub-dev-173246",
+      "StackId": "arn:aws:cloudformation:us-west-1:146320175376:stack/amplify-eliteracyhub-dev-173246/861611c0-7072-11ee-bd73-02ea8b8095ff",
+      "AmplifyAppId": "d3h4yysrlvmn1j"
+    },
+    "categories": {
+      "auth": {
+        "eliteracyhub4abc5352": {}
+      }
+    }
+  }
+}
