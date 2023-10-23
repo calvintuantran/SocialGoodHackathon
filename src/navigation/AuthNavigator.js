@@ -10,7 +10,7 @@ const AuthStack = createStackNavigator();
 const AuthModalStack = createStackNavigator();
 
 const AuthNavigator = ({ signIn }) => (
-    <AuthModalStack.Navigator mode="modal" headerMode="none">
+    <AuthModalStack.Navigator mode="modal" headerMode="screen">
         <AuthModalStack.Screen name="AuthPages">
             {() => (
                 <AuthStack.Navigator>
