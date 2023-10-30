@@ -1,24 +1,25 @@
 import { StatusBar } from 'expo-status-bar';
+import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import ChooseWhatToLearnScreen from './src/components/ChooseWhatToLearn';
+import AppNavigation from './src/navigation/Index';
+import config from './src/aws-exports';
+import { Amplify } from 'aws-amplify';
+
+Amplify.configure(config);
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <StatusBar style="auto" />
-      <NavigationContainer>
-        <ChooseWhatToLearnScreen/>
-      </NavigationContainer>
-    </View>
-  );
+
+    return (
+        <View style={styles.container}>
+            <AppNavigation />
+            <StatusBar style="auto" />
+        </View>
+    );
+
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+    container: {
+        flex: 1,
+    },
 });
